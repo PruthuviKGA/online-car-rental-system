@@ -13,6 +13,4 @@ It supports admin and user functionalities including car rentals, rental approva
 - **MS SQL Server**
 - **JWT Authentication**
 - **Docker & Docker Compose**
-- **Swagger (OpenAPI)**
-
 ---
