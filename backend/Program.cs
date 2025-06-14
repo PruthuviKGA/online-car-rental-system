@@ -19,6 +19,7 @@ builder.Services.AddDbContext<CarRentalDbContext>(options =>
             errorNumbersToAdd: null)
     ));
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ICarService, CarService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
