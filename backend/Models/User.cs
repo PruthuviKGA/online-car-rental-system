@@ -23,7 +23,7 @@ namespace backend.Models
         public bool IsActive { get; set; } = true;
 
         // Navigation Properties
-        //public ICollection<RentalRequest> RentalRequests { get; set; }
+        public ICollection<RentalRequest> RentalRequests { get; set; }
         //public ICollection<Rental> Rentals { get; set; }
         //public ICollection<Feedback> Feedbacks { get; set; }
     }

@@ -18,6 +18,9 @@ namespace backend.Models
         public string FuelType { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+
+        public ICollection<RentalRequest> RentalRequests { get; set; }
+
     }
 }
 

@@ -9,5 +9,6 @@ namespace backend.Data
 
         public DbSet<User> Users => Set<User>();
         public DbSet<Car> Cars => Set<Car>();
+        public DbSet<RentalRequest> RentalRequests { get; set; }
     }
 }
