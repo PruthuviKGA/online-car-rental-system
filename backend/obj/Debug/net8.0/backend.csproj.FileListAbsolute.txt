@@ -139,3 +139,4 @@ C:\Users\Pruthuvi\Documents\GitHub\online-car-rental-system\backend\obj\Debug\ne
 C:\Users\Pruthuvi\Documents\GitHub\online-car-rental-system\backend\obj\Debug\net8.0\backend.pdb
 C:\Users\Pruthuvi\Documents\GitHub\online-car-rental-system\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 C:\Users\Pruthuvi\Documents\GitHub\online-car-rental-system\backend\obj\Debug\net8.0\ref\backend.dll
+C:\Users\Pruthuvi\Documents\GitHub\online-car-rental-system\backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
