@@ -26,6 +26,8 @@ builder.Services.AddDbContext<CarRentalDbContext>(options =>
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ICarService, CarService>();
 builder.Services.AddScoped<IRentalRequestService, RentalRequestService>();
+builder.Services.AddScoped<IRentalService, RentalService>();
+builder.Services.AddScoped<IFeedbackService, FeedbackService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {

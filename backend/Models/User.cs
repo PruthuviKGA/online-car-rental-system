@@ -24,7 +24,7 @@ namespace backend.Models
 
         // Navigation Properties
         public ICollection<RentalRequest> RentalRequests { get; set; }
-        //public ICollection<Rental> Rentals { get; set; }
-        //public ICollection<Feedback> Feedbacks { get; set; }
+        public ICollection<Rental> Rentals { get; set; }
+        public ICollection<Feedback> Feedbacks { get; set; }
     }
 }

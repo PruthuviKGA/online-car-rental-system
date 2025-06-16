@@ -30,5 +30,8 @@ namespace backend.Models
 
         public User User { get; set; }
         public Car Car { get; set; }
+
+        public ICollection<Rental> Rentals { get; set; }
+
     }
 }
