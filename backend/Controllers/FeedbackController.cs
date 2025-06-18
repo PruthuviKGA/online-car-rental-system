@@ -3,6 +3,7 @@ using backend.Services;
 using backend.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace backend.Controllers
 {
@@ -21,7 +22,7 @@ namespace backend.Controllers
         [HttpPost]
         public IActionResult Add([FromBody] FeedbackDto dto)
         {
-            var userId = int.Parse(User.FindFirst("nameidentifier")?.Value!);
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
             _service.AddFeedback(userId, dto);
             return Ok(new { message = "Feedback submitted." });
         }
@@ -30,7 +31,7 @@ namespace backend.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] FeedbackDto dto)
         {
-            var userId = int.Parse(User.FindFirst("nameidentifier")?.Value!);
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
             _service.UpdateFeedback(id, userId, dto);
             return Ok(new { message = "Feedback updated." });
         }

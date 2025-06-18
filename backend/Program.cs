@@ -28,6 +28,7 @@ builder.Services.AddScoped<ICarService, CarService>();
 builder.Services.AddScoped<IRentalRequestService, RentalRequestService>();
 builder.Services.AddScoped<IRentalService, RentalService>();
 builder.Services.AddScoped<IFeedbackService, FeedbackService>();
+builder.Services.AddScoped<IMaintenanceService, MaintenanceService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {

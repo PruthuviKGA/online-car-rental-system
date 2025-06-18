@@ -30,7 +30,7 @@ namespace backend.Controllers
 
         // ADMIN: Update request status
         [Authorize(Roles = "Admin")]
-        [HttpPut("{requestId}")]
+        [HttpPut("{id}")]
         public IActionResult UpdateStatus(int requestId, UpdateRequestStatusDto dto)
         {
             _service.UpdateStatus(requestId, dto);
@@ -56,7 +56,7 @@ namespace backend.Controllers
 
         // ALL: Get by ID
         [Authorize]
-        [HttpGet("{requestId}")]
+        [HttpGet("{id}")]
         public IActionResult GetById(int requestId)
         {
             var request = _service.GetRequestById(requestId);
@@ -65,7 +65,7 @@ namespace backend.Controllers
 
         // ADMIN: Delete
         [Authorize(Roles = "Admin")]
-        [HttpDelete("{requestId}")]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int requestId)
         {
             _service.DeleteRequest(requestId);
