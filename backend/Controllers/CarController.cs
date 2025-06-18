@@ -28,7 +28,7 @@ namespace backend.Controllers
 
         // ADMIN - UPDATE CAR
         [Authorize(Roles = "Admin")]
-        [HttpPut("{carId}")]
+        [HttpPut("{id}")]
         public IActionResult UpdateCar(int carId, [FromBody] CarDto dto)
         {
             _carService.UpdateCar(carId, dto);
@@ -37,7 +37,7 @@ namespace backend.Controllers
 
         // ADMIN - DELETE CAR
         [Authorize(Roles = "Admin")]
-        [HttpDelete("{carId}")]
+        [HttpDelete("{id}")]
         public IActionResult DeleteCar(int carId)
         {
             _carService.DeleteCar(carId);
@@ -46,7 +46,7 @@ namespace backend.Controllers
 
         // ADMIN/USER - GET BY ID
         [Authorize]
-        [HttpGet("{carId}")]
+        [HttpGet("{id}")]
         public IActionResult GetCarById(int carId)
         {
             var car = _carService.GetCarById(carId);
